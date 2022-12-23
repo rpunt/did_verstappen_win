@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+hamilton-updater
 
 # Test binary, built with `go test -c`
 *.test

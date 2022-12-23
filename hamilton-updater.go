@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 
 	"github.com/rpunt/f1apireader"
 )
@@ -22,34 +21,23 @@ func main() {
 	// config['description'] = "#{race_status['race']['meetingCountryName']}: #{raceStart.strftime('%d %B %Y')}"
 	// File.write("#{__dir__}/_config.yml", config.to_yaml)
 
-	for _, event := range race.SeasonContext.Timetables {
-		if event.Description == "Race" {
-			switch event.State {
-			case "upcoming":
-				race.CurrentRaceStatus = "The race hasn't started yet"
-			case "started":
-				race.CurrentRaceStatus = "They're racing now"
-			case "completed":
-				race.CurrentRaceStatus = "They're done racing"
-				for _, result := range race.RaceResults {
-					position, err := strconv.Atoi(result.PositionNumber)
-					if err != nil {
-						fmt.Println("err:", err)
-					}
-					if position == 1 {
-						race.Winner = result.DriverTLA
-					}
-				}
-			}
-		}
+	raceStatus, err := race.Status()
+	if err != nil {
+		fmt.Println("err:", err)
+	}
+	raceWinner, err := race.Winner()
+	if err != nil {
+		fmt.Println("err:", err)
 	}
 
-	fmt.Println("state:", race.CurrentRaceStatus)
-	fmt.Println("winner:", race.Winner)
-	if race.Winner == "HAM" {
-		fmt.Println("YES")
+	if raceStatus == "completed" {
+		if raceWinner == "HAM" {
+			fmt.Println("YES")
+		} else {
+			fmt.Println("NO")
+		}
 	} else {
-		fmt.Println("NO")
+		fmt.Printf("race is %s\n", raceStatus)
 	}
 
 	// File.write("#{__dir__}/index.md", "# #{answer}")
