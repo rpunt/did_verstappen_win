@@ -12,7 +12,7 @@ func main() {
 	// g.checkout(branch)
 	// # g.pull
 
-	race, err := f1apireader.RaceResults("https://api.formula1.com/v1/event-tracker")
+	race, err := f1apireader.Race_Results("https://api.formula1.com/v1/event-tracker")
 	if err != nil {
 		fmt.Println("err:", err)
 	}
@@ -31,7 +31,7 @@ func main() {
 	}
 
 	if raceStatus == "completed" {
-		if raceWinner == "HAM" {
+		if raceWinner.DriverTLA == "HAM" {
 			fmt.Println("YES")
 		} else {
 			fmt.Println("NO")
