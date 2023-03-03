@@ -7,7 +7,10 @@
 
 4. Run the binary
 
-`./did-hamilton-win`
+```bash
+$ ./did-hamilton-win
+race is upcoming
+```
 
 6. ...
 7. Profit
