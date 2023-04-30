@@ -5,6 +5,7 @@
 *.so
 *.dylib
 hamilton-updater
+verstappen-updater
 
 # Test binary, built with `go test -c`
 *.test
