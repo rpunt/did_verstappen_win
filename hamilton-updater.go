@@ -16,12 +16,12 @@ func main() {
 	if err != nil {
 		fmt.Println("err:", err)
 	}
-	raceWinner, err := race.Winner()
-	if err != nil {
-		fmt.Println("err:", err)
-	}
 
 	if raceStatus == "completed" {
+		raceWinner, err := race.Winner()
+		if err != nil {
+			fmt.Println("err:", err)
+		}
 		if raceWinner.DriverTLA == "HAM" {
 			fmt.Println("YES")
 		} else {
