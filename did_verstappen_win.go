@@ -1,4 +1,4 @@
-package did_verstappen_win
+package main
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"github.com/rpunt/f1apireader"
 )
 
-func did_verstappen_win() {
+func main() {
 	race, err := f1apireader.RaceResults()
 	if err != nil {
 		fmt.Println("err:", err)
