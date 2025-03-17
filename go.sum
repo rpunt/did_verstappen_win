@@ -1,5 +1,7 @@
-github.com/google/go-cmp v0.5.9 h1:O2Tfq5qg4qc4AmwVlvv0oLiVAGB7enBSJ2x2DqQFi38=
+github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/rpunt/f1apireader v1.4.1 h1:+mvQDHD2VsDZkMkewQc599dNUqPfTJD6L9GvOooNbY8=
 github.com/rpunt/f1apireader v1.4.1/go.mod h1:fcbncFYuJvkMQNg77vZWSOTnI9dlUelNRxk4kWVNXZU=
-github.com/rpunt/simplehttp v0.0.5 h1:aAZgmQOfDrU1mVXNulbjudCaUV9UZYe8nBrCku0y984=
-github.com/rpunt/simplehttp v0.0.5/go.mod h1:KHgfgNC8c4Elcqg0Gvd+y58L9fzcEMWRtUOvVOeL9Jk=
+github.com/rpunt/f1apireader v1.5.0 h1:3mSau2EfZfHFYEtzP/mTwQvCfL5rvdnviOYZW6+Mkr8=
+github.com/rpunt/f1apireader v1.5.0/go.mod h1:fcbncFYuJvkMQNg77vZWSOTnI9dlUelNRxk4kWVNXZU=
+github.com/rpunt/simplehttp v0.0.6 h1:+y7pj67W9lOJzOheTL3UbEoJQkHubwPzHEwsvoLcf7I=
+github.com/rpunt/simplehttp v0.0.6/go.mod h1:U2cW2XD5TsRYjAHTo6JmwzbU44UNYkubWlZibi8ayHU=
