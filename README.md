@@ -1,5 +1,7 @@
 # Did Verstappen Win?
 
+A no-spoilers answer to determine whether a race was worth watching.
+
 1. Clone the repo
 2. Build the binary
 
