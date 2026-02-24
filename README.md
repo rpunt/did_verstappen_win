@@ -2,17 +2,18 @@
 
 A no-spoilers answer to determine whether a race was worth watching.
 
-1. Clone the repo
-2. Build the binary
+1. Install it
 
-   `go build -o did_verstappen_win did_verstappen_win.go`
+   `go install github.com/rpunt/did_verstappen_win@latest`
 
-3. Run the binary
+   Ensure $(go env GOPATH)/bin is in your PATH.
+
+2. Run the binary
 
    ```bash
-   $ ./did_verstappen_win
-   race is upcoming
+   $ did_verstappen_win
+   NO
    ```
 
-4. ...
-5. Profit
+3. ...
+4. Profit
